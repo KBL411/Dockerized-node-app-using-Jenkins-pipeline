@@ -2,8 +2,8 @@
 
 
 ## Pipeline configuration
-![](Dockerized-node-app-using-Jenkins-pipeline\Conf.PNG)
+![](https://github.com/KBL411/Dockerized-node-app-using-Jenkins-pipeline/Dockerized-node-app-using-Jenkins-pipeline/blob/main/Conf.PNG)
 
 
 ## Logs
-![](Dockerized-node-app-using-Jenkins-pipeline\Logs.PNG)
+![](https://github.com/KBL411/Dockerized-node-app-using-Jenkins-pipeline/Dockerized-node-app-using-Jenkins-pipeline/blob/main/Logs.PNG)
