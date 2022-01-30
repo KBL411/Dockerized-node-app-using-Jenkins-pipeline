@@ -9,12 +9,16 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'docker build -t dockernode .'
+                dir('my_app/') {
+                    bat 'docker build -t dockernode .'
+                }
             }
         }
         stage('Run') {
             steps {
-                bat 'echo 1'
+                dir('my_app/') {
+                    bat 'docker run -it -p 3000:3000 -d --name nodejsdocker dockernode'
+                }
             }
         }
     }
