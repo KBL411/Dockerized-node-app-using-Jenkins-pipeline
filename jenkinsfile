@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Pull') {
+            steps {
+                git branch: 'main', url: 'https://github.com/KBL411/Dockerized-node-app-using-Jenkins-pipeline'
+            }
+        }
+        stage('Build') {
+            steps {
+                bat 'docker build -t dockernode .'
+            }
+        }
+        stage('Run') {
+            steps {
+                bat 'echo 1'
+            }
+        }
+    }
+}
